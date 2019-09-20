@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Calculator</title>
+</head>
+<body>
+    <div class="box">
+        <div class="frame">
+            <div id="notch"></div>
+            <div class="numpad">
+                    <input class="display" name ="ans" id="ans" value="0" onfocus="this.blur()">
+
+                    <button type="button" class="buttons" onclick="s('')">C</button>
+                    <button type="button" class="buttons" onclick="s('....do..')">m-</button>
+                    <button type="button" class="buttons" onclick="a('%')">%</button>
+                    <button type="button" class="buttons red" onclick="a('/')">÷</button>
+    
+    
+                    <button type="button" class="buttons num" onclick="a('7')">7</button>
+                    <button type="button" class="buttons num" onclick="a('8')">8</button>
+                    <button type="button" class="buttons num" onclick="a('9')">9</button>
+                    <button type="button" class="buttons red" onclick="a('*')">x</button>
+    
+    
+                    <button type="button" class="buttons num" onclick="a('4')">4</button>
+                    <button type="button" class="buttons num" onclick="a('5')">5</button>
+                    <button type="button" class="buttons num" onclick="a('6')">6</button>
+                    <button type="button" class="buttons red" onclick="a('-')">-</button>
+    
+    
+                    <button type="button" class="buttons num" onclick="a('1')">1</button>
+                    <button type="button" class="buttons num" onclick="a('2')">2</button>
+                    <button type="button" class="buttons num" onclick="a('3')">3</button>
+                    <button type="button" class="buttons red" onclick="a('+')">+</button>
+    
+    
+                    <button type="button" class="buttons num null" onclick="a('0')">0</button>
+                    <button type="button" class="buttons num" onclick="a('.')">,</button>
+                    
+                    <button type="button" class="buttons yellow" onclick="e()">=</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="myscripts.js"></script>
+</body>
+</html>
